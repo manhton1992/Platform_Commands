@@ -3,7 +3,7 @@ Project uses .Net Core and GraphQL to generate commands based on available platf
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development. 
+These instructions will get you a copy of the project up and running on your local machine for development. I implement the project on linux. You can see an example in the image file
 
 ### Prerequisites
 What things you need to install the software and how to install them?  
@@ -38,6 +38,13 @@ $ http://localhost:5000/graphql/
 GraphQL ralation
 $ http://localhost:5000/ui/voyager
 
-![alt text](./images/query.png)
-![alt text](https://github.com/manhton1992/Platform_Commands/blob/main/images/mutation.png?raw=true)
+### Frequently used commands
+dotnet tool install --global dotnet-ef
+dotnet tool update --global dotnet-ef
+dotnet ef migrations add AddPlatformToDB
+dotnet ef update database
+
+### Node 
+Every time you change the Model, we should update the migration and database. Addtype in startup.cs.
+[UseDBContext(typeof(AppDBContext))] must be added to execute queries in the DB
 
