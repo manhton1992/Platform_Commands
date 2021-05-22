@@ -38,4 +38,6 @@ $ http://localhost:5000/graphql/
 GraphQL ralation
 $ http://localhost:5000/ui/voyager
 
+![alt text](./images/query.png)
+![alt text](https://github.com/manhton1992/Platform_Commands/blob/main/images/mutation.png?raw=true)
 
