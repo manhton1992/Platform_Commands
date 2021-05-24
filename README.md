@@ -48,3 +48,25 @@ dotnet ef update database
 Every time you change the Model, we should update the migration and database. Addtype in startup.cs.
 [UseDBContext(typeof(AppDBContext))] must be added to execute queries in the DB
 
+### Example
+#
+![alt text](./images/example.png)
+
+![alt text](./images/query.png)
+
+![alt text](./images/mutation.png)
+
+![alt text](./images/Subscription.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
